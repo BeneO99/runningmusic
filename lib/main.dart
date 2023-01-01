@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:runningmusic/widget/musikplayer.dart';
 import 'package:runningmusic/widget/step_to_beat.dart';
 
 void main() {
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: const StepToBeat());
+        home: const musicplayer());
   }
 }
