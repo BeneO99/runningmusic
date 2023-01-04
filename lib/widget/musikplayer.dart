@@ -58,6 +58,7 @@ class _musicplayerState extends State<musicplayer> {
             _deviceStatus = 'connected';
             break;
           case ConnectionType.unknown:
+            print("fuuuuuuuuuuck this shit");
             _deviceStatus = 'unknown';
             break;
           case ConnectionType.disconnected:
