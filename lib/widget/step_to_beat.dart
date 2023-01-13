@@ -21,9 +21,8 @@ class _StepToBeatState extends State<StepToBeat> {
   static const String _eSenseName = "eSense-0678";
   String _deviceStatus = '';
   bool _runningCount = false;
-  bool updownswitch = true;
   int _counter = 0;
-  int _bpm = 120;
+  int _bpm = 80;
   late StreamSubscription<FlSpot> _subscription;
   final List<FlSpot> _speed = [];
 
@@ -127,13 +126,8 @@ class _StepToBeatState extends State<StepToBeat> {
         _speed.add(event);
 
         if (_speed[_speed.length - 2].y < _speed[_speed.length - 1].y &&
-            _speed[_speed.length - 1].y > -2500 &&
-            updownswitch) {
-          _counter++;
-          updownswitch = false;
-        } else if (_speed[_speed.length - 2].y < _speed[_speed.length - 1].y &&
             _speed[_speed.length - 1].y > -2500) {
-          updownswitch = true;
+          _counter++;
         }
       });
     });
