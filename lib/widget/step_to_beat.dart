@@ -175,7 +175,7 @@ class _StepToBeatState extends State<StepToBeat> {
                             colors: <Color>[
                               Color.fromARGB(255, 13, 90, 3),
                               Color.fromARGB(164, 25, 210, 87),
-                              Color.fromARGB(255, 66, 245, 96),
+                              Color.fromARGB(255, 13, 90, 3),
                             ],
                           ),
                         ),
